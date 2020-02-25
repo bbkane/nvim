@@ -1,5 +1,11 @@
 # nvim
+
+# DEPRECATED - MOVED TO https://github.com/bbkane/dotfiles/tree/master/nvim
+
+I will erase this repo once I'm confident that works well enough :)
+
 My Neovim Config. Also works for Vim.
+
 
 ## NeoVim Install
 

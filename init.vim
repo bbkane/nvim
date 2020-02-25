@@ -17,8 +17,8 @@ endif
 " Try to use a colorscheme plugin
 " but fallback to a default one
 try
-    colorscheme gruvbox
-    " colorscheme desert-warm-256
+    " colorscheme gruvbox
+    colorscheme desert-warm-256
     " colorscheme elflord
     " colorscheme railscasts
     " colorscheme dracula
@@ -264,6 +264,8 @@ if executable('cloc')
     command! Cloc !cloc %
 endif
 
+"TODO: checkout :h formatexpr and :h formatprg
+
 if executable('python')
     command! JSONFormat %!python -m json.tool
 endif
@@ -276,6 +278,10 @@ endif
 
 if executable('gofmt')
     command! GoFormat %!gofmt %
+endif
+
+if executable('terraform')
+    command! TerraFormat %!terraform fmt -no-color - < %
 endif
 
 " use zg to add word to word-list
